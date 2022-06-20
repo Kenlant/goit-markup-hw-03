@@ -54,6 +54,19 @@ ul {
 
 /* common styles start */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .container {
     width: 1200px;
     margin: auto;    
@@ -234,11 +247,6 @@ ul {
 
 
 /* features section styles start */
-
-.features-header {
-    display: none;
-}
-
 .features-list {
     display: flex;
     justify-content: space-between;
@@ -293,6 +301,7 @@ ul {
 }
 
 .team-header {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -347,14 +356,6 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.products-header {
-    display: none;
-}
-
-.product-filter-header {
-    display: none;
 }
 
 .product-filter-list {
